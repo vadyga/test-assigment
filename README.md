@@ -2,7 +2,7 @@
 
 I had really tight deadlines, so decisions were made to neglect something.
 
-I decided to put almost all attention to application's architecture. So now, it was easy to expand and upgrade. Also
+You give so blured task description, so I decided to put almost all attention to application's architecture. So now, it was easy to expand and upgrade. Also
 some figma's details unclear, so fully creativities mode on :)
 
 Put attention:
