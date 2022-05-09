@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body, html {
+        font-family: 'Gilroy', sans-serif;
+        @apply h-full;
+    }
+
+    #app {
+        @apply h-full;
+    }
+}
