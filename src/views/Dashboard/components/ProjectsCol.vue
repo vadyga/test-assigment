@@ -16,7 +16,7 @@ import Project from './Project.vue'
 import { IProjectList } from '@/types/types'
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   projectLists: Object as () => IProjectList
 })
 </script>

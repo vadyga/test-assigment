@@ -1,8 +1,8 @@
-import api from './api'
+// import api from './api'
 
-const URLS = {
-  login: '/login'
-}
+// const URLS = {
+//   login: '/login'
+// }
 
 export const login = (config = {}) => {
   /*

@@ -60,6 +60,10 @@ input {
     @apply border-blue;
   }
 
+  &:hover + label::before {
+    @apply border-blue;
+  }
+
   &.checked + label::before {
     @apply bg-blue border-blue;
   }

@@ -64,7 +64,7 @@ import BaseButton from '@/components/base/button/BaseButton.vue'
 import { defineProps, ref } from 'vue'
 import { IProject } from '@/types/types'
 
-const props = defineProps({
+defineProps({
   project: Object as () => IProject
 })
 

@@ -1,12 +1,12 @@
 <template>
   <form action="" class="flex flex-col gap-5 mx-auto border border-lightgray rounded p-5"
         :class="{'opacity-20':isPending}" @submit="submit">
-    <BaseInput type="text" v-model="email" :label="'Email'" :placeholder="'you@example.com'"/>
-    <BaseInput type="text" v-model="password" :label="'Password'" :placeholder="'Password'"/>
+    <BaseInput :type="'text'" :id="'email'" v-model="email" :label="'Email'" :placeholder="'you@example.com'"/>
+    <BaseInput :type="'password'" :id="'pass'" v-model="password" :label="'Password'" :placeholder="'Password'"/>
     <div class="flex justify-between mb-8">
       <div class="text-sm">
         <BaseCheckbox :label="'Keep me logged in'" v-model="keepLogin"
-                      :name="keepLogin"/>
+                      :name="'keep_login'"/>
       </div>
       <router-link to="/forgot" class="text-blue font-bold hover:text-darkblue">
         Forgot password?

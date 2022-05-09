@@ -1,15 +1,15 @@
 <template>
   <div class="group">
     <label
-      id="listbox-label"
+      :for="id"
       class="block mb-2.5 text-sm leading-5 font-bold text-darkgray"
     >
       {{ label }}
     </label>
     <input
       class="bg-white placeholder-gray text-darkgray rounded px-3.5 py-3 focus:outline-none border border-lightgray focus:border-blue w-full hover:border-darkgray transition-colors"
-      aria-labelledby="listbox-label"
-      type="text"
+      :id="id"
+      :type="type"
       v-bind="$attrs"
       :value="modelValue"
       :placeholder="label"
@@ -27,6 +27,14 @@ export default {
     modelValue: {
       type: [String, Number],
       default: ''
+    },
+    id: {
+      type: String,
+      default: ''
+    },
+    type: {
+      type: String,
+      default: 'text'
     }
   }
 }

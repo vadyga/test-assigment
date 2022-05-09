@@ -1,7 +1,7 @@
 <template>
   <button
-    class="btn focus:outline-none transition-all"
-    :class="['btn-' + size, { 'btn-outline': outline }]"
+    class="btn focus:outline-none bg-blue font-bold py-3 transition-all"
+    :class="{'btn-outline': outline }"
   >
     <slot />
   </button>
@@ -10,10 +10,6 @@
 <script>
 export default {
   props: {
-    size: {
-      type: String,
-      default: 's'
-    },
     outline: {
       type: Boolean,
       default: false
@@ -26,9 +22,8 @@ export default {
 .btn {
   color: white;
   border-radius: 6px;
-  @apply bg-blue font-bold py-3 transition-colors;
+  @apply bg-blue font-bold py-3;
   &:hover {
-    background-color: #00afea;
     @apply bg-darkblue;
   }
 
